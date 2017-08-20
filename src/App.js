@@ -31,6 +31,13 @@ class App extends React.Component {
 
   render() {
 
+    const injectActions = (Component, props) => {
+      return <Component 
+        actions={this.props.actions}
+        {...props}
+      />
+    }
+
     let pageContainerClassName = ["page-header-fixed", "page-sidebar-fixed"]
 
     if (this.state.isNavToggleOn) 
@@ -67,7 +74,7 @@ class App extends React.Component {
                         key={index}
                         exact={route.exact}
                         path={route.path}
-                        component={route.component} />
+                        render={ ()=> injectActions(route.component) } />
                     )
                 return null
               })
