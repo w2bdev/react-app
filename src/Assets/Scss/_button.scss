@@ -1,0 +1,1273 @@
+
+.btn-xs .caret:before {
+    top: -5px;
+}
+
+.btn {
+    &:active,
+    &:focus,
+    &:hover {
+        outline: 0;
+    }
+    &.btn-lg {
+        border-radius: 4px;
+    }
+    &.btn-rounded {
+        -webkit-border-radius: 100px;
+        -moz-border-radius: 100px;
+        border-radius: 100px;
+    }
+    &.btn-danger.btn-outline,
+    &.btn-default.btn-outline,
+    &.btn-grey.btn-outline,
+    &.btn-info.btn-outline,
+    &.btn-outline,
+    &.btn-pink.btn-outline,
+    &.btn-primary.btn-outline,
+    &.btn-purple.btn-outline,
+    &.btn-success.btn-outline,
+    &.btn-warning.btn-outline,
+    &.btn-yellow.btn-outline {
+        background: 0 0;
+    }
+    &.no-border {
+        border: none;
+    }
+    &.btn-icon {
+        border-radius: 40px;
+    }
+}
+
+.btn-default {
+    border-color: #dfdfe0;
+    color: #212121;
+    background: #fff;
+    &.active {
+        border-color: #dfdfe0;
+        color: #212121;
+        background: #fff;
+    }
+    &.disabled {
+        &.focus,
+        &:focus,
+        &:hover {
+            border-color: #dfdfe0;
+            color: #212121;
+            background: #fff;
+        }
+    }
+    &:active {
+        border-color: #dfdfe0;
+        color: #212121;
+        background: #fff;
+    }
+    &[disabled] {
+        &.focus,
+        &:focus,
+        &:hover {
+            border-color: #dfdfe0;
+            color: #212121;
+            background: #fff;
+        }
+    }
+}
+
+.open>.dropdown-toggle.btn-default {
+    border-color: #dfdfe0;
+    color: #212121;
+    background: #fff;
+}
+
+fieldset[disabled] .btn-default {
+    &.focus,
+    &:focus,
+    &:hover {
+        border-color: #dfdfe0;
+        color: #212121;
+        background: #fff;
+    }
+}
+
+.btn-default {
+    &.active {
+        background: #fff;
+        &.focus,
+        &:focus,
+        &:hover {
+            background: #f3f3f3;
+            border-color: #dfdfe0;
+        }
+    }
+    &.btn-outline {
+        &:active,
+        &:focus,
+        &:hover {
+            background: #f3f3f3;
+            border-color: #dfdfe0;
+        }
+    }
+    &:active {
+        background: #f3f3f3;
+        border-color: #dfdfe0;
+        &.focus,
+        &:focus,
+        &:hover {
+            background: #f3f3f3;
+            border-color: #dfdfe0;
+        }
+    }
+    &:focus,
+    &:hover {
+        background: #f3f3f3;
+        border-color: #dfdfe0;
+    }
+}
+
+.open>.dropdown-toggle.btn-default {
+    &.focus,
+    &:focus,
+    &:hover {
+        background: #f3f3f3;
+        border-color: #dfdfe0;
+    }
+}
+
+.btn-white {
+    border-color: #fff;
+    color: #000;
+    background: #fff;
+    &.active {
+        border-color: #fff;
+        color: #000;
+        background: #fff;
+    }
+    &.disabled {
+        &.focus,
+        &:focus,
+        &:hover {
+            border-color: #fff;
+            color: #000;
+            background: #fff;
+        }
+    }
+    &:active {
+        border-color: #fff;
+        color: #000;
+        background: #fff;
+    }
+    &[disabled] {
+        &.focus,
+        &:focus,
+        &:hover {
+            border-color: #fff;
+            color: #000;
+            background: #fff;
+        }
+    }
+}
+
+.open>.dropdown-toggle.btn-white {
+    border-color: #fff;
+    color: #000;
+    background: #fff;
+}
+
+fieldset[disabled] .btn-white {
+    &.focus,
+    &:focus,
+    &:hover {
+        border-color: #fff;
+        color: #000;
+        background: #fff;
+    }
+}
+
+.btn-white {
+    &.btn-outline {
+        color: #fff;
+    }
+    &.active {
+        &.focus,
+        &:focus,
+        &:hover {
+            border-color: rgba(255, 255, 255, 0.85);
+            background: rgba(255, 255, 255, 0.85);
+            color: #000;
+        }
+    }
+    &.btn-outline {
+        &.active,
+        &:active,
+        &:focus,
+        &:hover {
+            border-color: rgba(255, 255, 255, 0.85);
+            background: rgba(255, 255, 255, 0.85);
+            color: #000;
+        }
+    }
+    &:active {
+        border-color: rgba(255, 255, 255, 0.85);
+        background: rgba(255, 255, 255, 0.85);
+        color: #000;
+        &.focus,
+        &:focus,
+        &:hover {
+            border-color: rgba(255, 255, 255, 0.85);
+            background: rgba(255, 255, 255, 0.85);
+            color: #000;
+        }
+    }
+    &:focus,
+    &:hover {
+        border-color: rgba(255, 255, 255, 0.85);
+        background: rgba(255, 255, 255, 0.85);
+        color: #000;
+    }
+}
+
+.open>.dropdown-toggle.btn-white {
+    &.focus,
+    &:focus,
+    &:hover {
+        border-color: rgba(255, 255, 255, 0.85);
+        background: rgba(255, 255, 255, 0.85);
+        color: #000;
+    }
+}
+
+.btn-primary {
+    border-color: #007AFF;
+    color: #fff;
+    background: #007AFF;
+    &.active {
+        border-color: #007AFF;
+        color: #fff;
+        background: #007AFF;
+    }
+    &.disabled {
+        &.focus,
+        &:focus,
+        &:hover {
+            border-color: #007AFF;
+            color: #fff;
+            background: #007AFF;
+        }
+    }
+    &:active {
+        border-color: #007AFF;
+        color: #fff;
+        background: #007AFF;
+    }
+    &[disabled] {
+        &.focus,
+        &:focus,
+        &:hover {
+            border-color: #007AFF;
+            color: #fff;
+            background: #007AFF;
+        }
+    }
+}
+
+.open>.dropdown-toggle.btn-primary {
+    border-color: #007AFF;
+    color: #fff;
+    background: #007AFF;
+}
+
+fieldset[disabled] .btn-primary {
+    &.focus,
+    &:focus,
+    &:hover {
+        border-color: #007AFF;
+        color: #fff;
+        background: #007AFF;
+    }
+}
+
+.btn-primary {
+    &.btn-outline {
+        color: #007AFF;
+    }
+    &.active {
+        &.focus,
+        &:focus,
+        &:hover {
+            border-color: #1D62F0;
+            background: #1D62F0;
+            color: #fff;
+        }
+    }
+    &.btn-outline {
+        &.active,
+        &:active,
+        &:focus,
+        &:hover {
+            border-color: #1D62F0;
+            background: #1D62F0;
+            color: #fff;
+        }
+    }
+    &:active {
+        border-color: #1D62F0;
+        background: #1D62F0;
+        color: #fff;
+        &.focus,
+        &:focus,
+        &:hover {
+            border-color: #1D62F0;
+            background: #1D62F0;
+            color: #fff;
+        }
+    }
+    &:focus,
+    &:hover {
+        border-color: #1D62F0;
+        background: #1D62F0;
+        color: #fff;
+    }
+}
+
+.open>.dropdown-toggle.btn-primary {
+    &.focus,
+    &:focus,
+    &:hover {
+        border-color: #1D62F0;
+        background: #1D62F0;
+        color: #fff;
+    }
+}
+
+.btn-success {
+    border-color: #4CD964;
+    color: #fff;
+    background: #4CD964;
+    &.active {
+        border-color: #4CD964;
+        color: #fff;
+        background: #4CD964;
+    }
+    &.disabled {
+        &.focus,
+        &:focus,
+        &:hover {
+            border-color: #4CD964;
+            color: #fff;
+            background: #4CD964;
+        }
+    }
+    &:active {
+        border-color: #4CD964;
+        color: #fff;
+        background: #4CD964;
+    }
+    &[disabled] {
+        &.focus,
+        &:focus,
+        &:hover {
+            border-color: #4CD964;
+            color: #fff;
+            background: #4CD964;
+        }
+    }
+}
+
+.open>.dropdown-toggle.btn-success {
+    border-color: #4CD964;
+    color: #fff;
+    background: #4CD964;
+}
+
+fieldset[disabled] .btn-success {
+    &.focus,
+    &:focus,
+    &:hover {
+        border-color: #4CD964;
+        color: #fff;
+        background: #4CD964;
+    }
+}
+
+.btn-success {
+    &.btn-outline {
+        color: #4CD964;
+        &:active,
+        &:focus,
+        &:hover {
+            color: #4CD964;
+        }
+    }
+    &.active {
+        &.focus,
+        &:focus,
+        &:hover {
+            background: #45c35a;
+            border-color: #45c35a;
+            color: #fff;
+        }
+    }
+    &.btn-outline {
+        &.active,
+        &:active,
+        &:focus,
+        &:hover {
+            background: #45c35a;
+            border-color: #45c35a;
+            color: #fff;
+        }
+    }
+    &:active {
+        background: #45c35a;
+        border-color: #45c35a;
+        color: #fff;
+        &.focus,
+        &:focus,
+        &:hover {
+            background: #45c35a;
+            border-color: #45c35a;
+            color: #fff;
+        }
+    }
+    &:focus,
+    &:hover {
+        background: #45c35a;
+        border-color: #45c35a;
+        color: #fff;
+    }
+}
+
+.open>.dropdown-toggle.btn-success {
+    &.focus,
+    &:focus,
+    &:hover {
+        background: #45c35a;
+        border-color: #45c35a;
+        color: #fff;
+    }
+}
+
+.btn-info {
+    border-color: #5AC8FA;
+    color: #fff;
+    background: #5AC8FA;
+    &.active {
+        border-color: #5AC8FA;
+        color: #fff;
+        background: #5AC8FA;
+    }
+    &.disabled {
+        &.focus,
+        &:focus,
+        &:hover {
+            border-color: #5AC8FA;
+            color: #fff;
+            background: #5AC8FA;
+        }
+    }
+    &:active {
+        border-color: #5AC8FA;
+        color: #fff;
+        background: #5AC8FA;
+    }
+    &[disabled] {
+        &.focus,
+        &:focus,
+        &:hover {
+            border-color: #5AC8FA;
+            color: #fff;
+            background: #5AC8FA;
+        }
+    }
+}
+
+.open>.dropdown-toggle.btn-info {
+    border-color: #5AC8FA;
+    color: #fff;
+    background: #5AC8FA;
+}
+
+fieldset[disabled] .btn-info {
+    &.focus,
+    &:focus,
+    &:hover {
+        border-color: #5AC8FA;
+        color: #fff;
+        background: #5AC8FA;
+    }
+}
+
+.btn-info {
+    &.btn-outline {
+        color: #5AC8FA;
+    }
+    &.active {
+        &.focus,
+        &:focus,
+        &:hover {
+            background: #50b3e0;
+            border-color: #50b3e0;
+            color: #fff;
+        }
+    }
+    &.btn-outline {
+        &.active,
+        &:active,
+        &:focus,
+        &:hover {
+            background: #50b3e0;
+            border-color: #50b3e0;
+            color: #fff;
+        }
+    }
+    &:active {
+        background: #50b3e0;
+        border-color: #50b3e0;
+        color: #fff;
+        &.focus,
+        &:focus,
+        &:hover {
+            background: #50b3e0;
+            border-color: #50b3e0;
+            color: #fff;
+        }
+    }
+    &:focus,
+    &:hover {
+        background: #50b3e0;
+        border-color: #50b3e0;
+        color: #fff;
+    }
+}
+
+.open>.dropdown-toggle.btn-info {
+    &.focus,
+    &:focus,
+    &:hover {
+        background: #50b3e0;
+        border-color: #50b3e0;
+        color: #fff;
+    }
+}
+
+.btn-warning {
+    border-color: #FF9500;
+    color: #fff;
+    background: #FF9500;
+    &.active {
+        border-color: #FF9500;
+        color: #fff;
+        background: #FF9500;
+    }
+    &.disabled {
+        &.focus,
+        &:focus,
+        &:hover {
+            border-color: #FF9500;
+            color: #fff;
+            background: #FF9500;
+        }
+    }
+    &:active {
+        border-color: #FF9500;
+        color: #fff;
+        background: #FF9500;
+    }
+    &[disabled] {
+        &.focus,
+        &:focus,
+        &:hover {
+            border-color: #FF9500;
+            color: #fff;
+            background: #FF9500;
+        }
+    }
+}
+
+.open>.dropdown-toggle.btn-warning {
+    border-color: #FF9500;
+    color: #fff;
+    background: #FF9500;
+}
+
+fieldset[disabled] .btn-warning {
+    &.focus,
+    &:focus,
+    &:hover {
+        border-color: #FF9500;
+        color: #fff;
+        background: #FF9500;
+    }
+}
+
+.btn-warning {
+    &.btn-outline {
+        color: #FF9500;
+    }
+    &.active {
+        &.focus,
+        &:focus,
+        &:hover {
+            background: #e68701;
+            border-color: #e68701;
+            color: #fff;
+        }
+    }
+    &.btn-outline {
+        &.active,
+        &:active,
+        &:focus,
+        &:hover {
+            background: #e68701;
+            border-color: #e68701;
+            color: #fff;
+        }
+    }
+    &:active {
+        background: #e68701;
+        border-color: #e68701;
+        color: #fff;
+        &.focus,
+        &:focus,
+        &:hover {
+            background: #e68701;
+            border-color: #e68701;
+            color: #fff;
+        }
+    }
+    &:focus,
+    &:hover {
+        background: #e68701;
+        border-color: #e68701;
+        color: #fff;
+    }
+}
+
+.open>.dropdown-toggle.btn-warning {
+    &.focus,
+    &:focus,
+    &:hover {
+        background: #e68701;
+        border-color: #e68701;
+        color: #fff;
+    }
+}
+
+.btn-danger {
+    border-color: #FF3B30;
+    color: #fff;
+    background: #FF3B30;
+    &.active {
+        border-color: #FF3B30;
+        color: #fff;
+        background: #FF3B30;
+    }
+    &.disabled {
+        &.focus,
+        &:focus,
+        &:hover {
+            border-color: #FF3B30;
+            color: #fff;
+            background: #FF3B30;
+        }
+    }
+    &:active {
+        border-color: #FF3B30;
+        color: #fff;
+        background: #FF3B30;
+    }
+    &[disabled] {
+        &.focus,
+        &:focus,
+        &:hover {
+            border-color: #FF3B30;
+            color: #fff;
+            background: #FF3B30;
+        }
+    }
+}
+
+.open>.dropdown-toggle.btn-danger {
+    border-color: #FF3B30;
+    color: #fff;
+    background: #FF3B30;
+}
+
+fieldset[disabled] .btn-danger {
+    &.focus,
+    &:focus,
+    &:hover {
+        border-color: #FF3B30;
+        color: #fff;
+        background: #FF3B30;
+    }
+}
+
+.btn-danger {
+    &.btn-outline {
+        color: #FF3B30;
+    }
+    &.active {
+        &.focus,
+        &:focus,
+        &:hover {
+            background: #e4352b;
+            border-color: #e4352b;
+            color: #fff;
+        }
+    }
+    &.btn-outline {
+        &.active,
+        &:active,
+        &:focus,
+        &:hover {
+            background: #e4352b;
+            border-color: #e4352b;
+            color: #fff;
+        }
+    }
+    &:active {
+        background: #e4352b;
+        border-color: #e4352b;
+        color: #fff;
+        &.focus,
+        &:focus,
+        &:hover {
+            background: #e4352b;
+            border-color: #e4352b;
+            color: #fff;
+        }
+    }
+    &:focus,
+    &:hover {
+        background: #e4352b;
+        border-color: #e4352b;
+        color: #fff;
+    }
+}
+
+.open>.dropdown-toggle.btn-danger {
+    &.focus,
+    &:focus,
+    &:hover {
+        background: #e4352b;
+        border-color: #e4352b;
+        color: #fff;
+    }
+}
+
+.btn-link {
+    color: #007AFF;
+    &:active,
+    &:focus,
+    &:hover {
+        color: #1D62F0;
+    }
+}
+
+.btn-purple {
+    border-color: #5856D6;
+    color: #fff;
+    background: #5856D6;
+    &.active {
+        border-color: #5856D6;
+        color: #fff;
+        background: #5856D6;
+    }
+    &.disabled {
+        &.focus,
+        &:focus,
+        &:hover {
+            border-color: #5856D6;
+            color: #fff;
+            background: #5856D6;
+        }
+    }
+    &:active {
+        border-color: #5856D6;
+        color: #fff;
+        background: #5856D6;
+    }
+    &[disabled] {
+        &.focus,
+        &:focus,
+        &:hover {
+            border-color: #5856D6;
+            color: #fff;
+            background: #5856D6;
+        }
+    }
+}
+
+.open>.dropdown-toggle.btn-purple {
+    border-color: #5856D6;
+    color: #fff;
+    background: #5856D6;
+}
+
+fieldset[disabled] .btn-purple {
+    &.focus,
+    &:focus,
+    &:hover {
+        border-color: #5856D6;
+        color: #fff;
+        background: #5856D6;
+    }
+}
+
+.btn-purple {
+    &.btn-outline {
+        color: #5856D6;
+    }
+    &.active {
+        &.focus,
+        &:focus,
+        &:hover {
+            background: #4c4bb7;
+            border-color: #4c4bb7;
+            color: #fff;
+        }
+    }
+    &.btn-outline {
+        &.active,
+        &:active,
+        &:focus,
+        &:hover {
+            background: #4c4bb7;
+            border-color: #4c4bb7;
+            color: #fff;
+        }
+    }
+    &:active {
+        background: #4c4bb7;
+        border-color: #4c4bb7;
+        color: #fff;
+        &.focus,
+        &:focus,
+        &:hover {
+            background: #4c4bb7;
+            border-color: #4c4bb7;
+            color: #fff;
+        }
+    }
+    &:focus,
+    &:hover {
+        background: #4c4bb7;
+        border-color: #4c4bb7;
+        color: #fff;
+    }
+}
+
+.open>.dropdown-toggle.btn-purple {
+    &.focus,
+    &:focus,
+    &:hover {
+        background: #4c4bb7;
+        border-color: #4c4bb7;
+        color: #fff;
+    }
+}
+
+.btn-pink {
+    border-color: #FF2D55;
+    color: #fff;
+    background: #FF2D55;
+    &.active {
+        border-color: #FF2D55;
+        color: #fff;
+        background: #FF2D55;
+    }
+    &.disabled {
+        &.focus,
+        &:focus,
+        &:hover {
+            border-color: #FF2D55;
+            color: #fff;
+            background: #FF2D55;
+        }
+    }
+    &:active {
+        border-color: #FF2D55;
+        color: #fff;
+        background: #FF2D55;
+    }
+    &[disabled] {
+        &.focus,
+        &:focus,
+        &:hover {
+            border-color: #FF2D55;
+            color: #fff;
+            background: #FF2D55;
+        }
+    }
+}
+
+.open>.dropdown-toggle.btn-pink {
+    border-color: #FF2D55;
+    color: #fff;
+    background: #FF2D55;
+}
+
+fieldset[disabled] .btn-pink {
+    &.focus,
+    &:focus,
+    &:hover {
+        border-color: #FF2D55;
+        color: #fff;
+        background: #FF2D55;
+    }
+}
+
+.btn-pink {
+    &.btn-outline {
+        color: #FF2D55;
+    }
+    &.active {
+        &.focus,
+        &:focus,
+        &:hover {
+            background: #de2649;
+            border-color: #de2649;
+            color: #fff;
+        }
+    }
+    &.btn-outline {
+        &.active,
+        &:active,
+        &:focus,
+        &:hover {
+            background: #de2649;
+            border-color: #de2649;
+            color: #fff;
+        }
+    }
+    &:active {
+        background: #de2649;
+        border-color: #de2649;
+        color: #fff;
+        &.focus,
+        &:focus,
+        &:hover {
+            background: #de2649;
+            border-color: #de2649;
+            color: #fff;
+        }
+    }
+    &:focus,
+    &:hover {
+        background: #de2649;
+        border-color: #de2649;
+        color: #fff;
+    }
+}
+
+.open>.dropdown-toggle.btn-pink {
+    &.focus,
+    &:focus,
+    &:hover {
+        background: #de2649;
+        border-color: #de2649;
+        color: #fff;
+    }
+}
+
+.btn-yellow {
+    border-color: #FC0;
+    color: #fff;
+    background: #FC0;
+    &.active {
+        border-color: #FC0;
+        color: #fff;
+        background: #FC0;
+    }
+    &.disabled {
+        &.focus,
+        &:focus,
+        &:hover {
+            border-color: #FC0;
+            color: #fff;
+            background: #FC0;
+        }
+    }
+    &:active {
+        border-color: #FC0;
+        color: #fff;
+        background: #FC0;
+    }
+    &[disabled] {
+        &.focus,
+        &:focus,
+        &:hover {
+            border-color: #FC0;
+            color: #fff;
+            background: #FC0;
+        }
+    }
+}
+
+.open>.dropdown-toggle.btn-yellow {
+    border-color: #FC0;
+    color: #fff;
+    background: #FC0;
+}
+
+fieldset[disabled] .btn-yellow {
+    &.focus,
+    &:focus,
+    &:hover {
+        border-color: #FC0;
+        color: #fff;
+        background: #FC0;
+    }
+}
+
+.btn-yellow {
+    &.btn-outline {
+        color: #FC0;
+    }
+    &.active {
+        &.focus,
+        &:focus,
+        &:hover {
+            background: #e6b801;
+            border-color: #e6b801;
+            color: #fff;
+        }
+    }
+    &.btn-outline {
+        &.active,
+        &:active,
+        &:focus,
+        &:hover {
+            background: #e6b801;
+            border-color: #e6b801;
+            color: #fff;
+        }
+    }
+    &:active {
+        background: #e6b801;
+        border-color: #e6b801;
+        color: #fff;
+        &.focus,
+        &:focus,
+        &:hover {
+            background: #e6b801;
+            border-color: #e6b801;
+            color: #fff;
+        }
+    }
+    &:focus,
+    &:hover {
+        background: #e6b801;
+        border-color: #e6b801;
+        color: #fff;
+    }
+}
+
+.open>.dropdown-toggle.btn-yellow {
+    &.focus,
+    &:focus,
+    &:hover {
+        background: #e6b801;
+        border-color: #e6b801;
+        color: #fff;
+    }
+}
+
+.btn-grey {
+    border-color: #8A8A8F;
+    color: #fff;
+    background: #8A8A8F;
+    &.active {
+        border-color: #8A8A8F;
+        color: #fff;
+        background: #8A8A8F;
+    }
+    &.disabled {
+        &.focus,
+        &:focus,
+        &:hover {
+            border-color: #8A8A8F;
+            color: #fff;
+            background: #8A8A8F;
+        }
+    }
+    &:active {
+        border-color: #8A8A8F;
+        color: #fff;
+        background: #8A8A8F;
+    }
+    &[disabled] {
+        &.focus,
+        &:focus,
+        &:hover {
+            border-color: #8A8A8F;
+            color: #fff;
+            background: #8A8A8F;
+        }
+    }
+}
+
+.open>.dropdown-toggle.btn-grey {
+    border-color: #8A8A8F;
+    color: #fff;
+    background: #8A8A8F;
+}
+
+fieldset[disabled] .btn-grey {
+    &.focus,
+    &:focus,
+    &:hover {
+        border-color: #8A8A8F;
+        color: #fff;
+        background: #8A8A8F;
+    }
+}
+
+.btn-grey {
+    &.btn-outline {
+        color: #8A8A8F;
+    }
+    &.active {
+        &.focus,
+        &:focus,
+        &:hover {
+            background: #737377;
+            border-color: #737377;
+            color: #fff;
+        }
+    }
+    &.btn-outline {
+        &.active,
+        &:active,
+        &:focus,
+        &:hover {
+            background: #737377;
+            border-color: #737377;
+            color: #fff;
+        }
+    }
+    &:active {
+        background: #737377;
+        border-color: #737377;
+        color: #fff;
+        &.focus,
+        &:focus,
+        &:hover {
+            background: #737377;
+            border-color: #737377;
+            color: #fff;
+        }
+    }
+    &:focus,
+    &:hover {
+        background: #737377;
+        border-color: #737377;
+        color: #fff;
+    }
+}
+
+.open>.dropdown-toggle.btn-grey {
+    &.focus,
+    &:focus,
+    &:hover {
+        background: #737377;
+        border-color: #737377;
+        color: #fff;
+    }
+}
+
+.btn-inverse {
+    border-color: #000;
+    color: #fff;
+    background: #000;
+    &.disabled {
+        &.focus,
+        &:focus,
+        &:hover {
+            border-color: #000;
+            color: #fff;
+            background: #000;
+        }
+    }
+    &[disabled] {
+        &.focus,
+        &:focus,
+        &:hover {
+            border-color: #000;
+            color: #fff;
+            background: #000;
+        }
+    }
+}
+
+.open>.dropdown-toggle.btn-inverse {
+    border-color: #000;
+    color: #fff;
+    background: #000;
+}
+
+fieldset[disabled] .btn-inverse {
+    &.focus,
+    &:focus,
+    &:hover {
+        border-color: #000;
+        color: #fff;
+        background: #000;
+    }
+}
+
+.btn-inverse {
+    &.btn-outline {
+        color: #000;
+    }
+    &.active {
+        background: #333;
+        border-color: #333;
+        color: #fff;
+        &.focus,
+        &:focus,
+        &:hover {
+            background: #333;
+            border-color: #333;
+            color: #fff;
+        }
+    }
+    &.btn-outline {
+        &.active,
+        &:active,
+        &:focus,
+        &:hover {
+            background: #333;
+            border-color: #333;
+            color: #fff;
+        }
+    }
+    &:active {
+        background: #333;
+        border-color: #333;
+        color: #fff;
+        &.focus,
+        &:focus,
+        &:hover {
+            background: #333;
+            border-color: #333;
+            color: #fff;
+        }
+    }
+    &:focus,
+    &:hover {
+        background: #333;
+        border-color: #333;
+        color: #fff;
+    }
+}
+
+.open>.dropdown-toggle.btn-inverse {
+    &.focus,
+    &:focus,
+    &:hover {
+        background: #333;
+        border-color: #333;
+        color: #fff;
+    }
+}

@@ -1,0 +1,271 @@
+.dropdown-menu,
+.navbar-nav>li>.dropdown-menu {
+    border-radius: 8px;
+}
+
+
+
+.dropdown-menu {
+    border-color: rgba(0, 0, 0, 0.05);
+    box-shadow: 0 2px 6px 1px rgba(0, 0, 0, 0.1);
+    float: none;
+    left: 0;
+    right: auto;
+    margin-top: 0;
+    padding: 8px 0;
+    font-size: 12px;
+}
+
+.dropdown .dropdown-menu {
+    min-width: 160px;
+    opacity: 0;
+    transform: scale(0.4);
+    transform-origin: 10% top;
+    max-height: 0;
+    display: block;
+    overflow: hidden;
+    transition: 0s max-height 0.15s linear, 0.1s opacity cubic-bezier(0.4, 0.5, 0.5, 1), 0.15s transform cubic-bezier(0.1, 1.2, 0.8, 1);
+}
+
+.dropdown-menu {
+    >li>a {
+        padding: 3px 15px;
+    }
+    &.dropdown-lg {
+        width: 300px;
+    }
+    &.dropdown-md {
+        width: 240px;
+    }
+    &:after {
+        content: '';
+        position: absolute;
+        top: -20px;
+        left: 20px;
+        border: 10px solid transparent;
+        border-bottom-color: #fff;
+    }
+    &:before {
+        content: '';
+        position: absolute;
+        top: -20px;
+        left: 20px;
+        border: 10px solid transparent;
+        border-bottom-color: #fff;
+        top: -21px;
+        border-bottom-color: rgba(0, 0, 0, 0.1);
+    }
+    &.dropdown-menu-right {
+        left: auto;
+        right: 0;
+    }
+}
+
+.dropdown-menu-right.dropdown-menu {
+    &:after,
+    &:before {
+        left: auto;
+        right: 20px;
+    }
+}
+
+.pull-right .dropdown-menu {
+    &:after,
+    &:before {
+        left: auto;
+        right: 20px;
+    }
+}
+
+.dropup .dropdown-menu {
+    &:after {
+        border-color: #fff transparent transparent;
+        top: auto;
+        bottom: -20px;
+    }
+    &:before {
+        border-color: #fff transparent transparent;
+        top: auto;
+        bottom: -20px;
+        bottom: -21px;
+        border-top-color: rgba(0, 0, 0, 0.1);
+    }
+}
+
+.navbar .dropdown-menu {
+    left: 50%;
+    margin-left: -80px;
+    &:after,
+    &:before {
+        left: 50%;
+        margin-left: -10px;
+    }
+    &.dropdown-lg {
+        margin-left: -150px;
+    }
+    &.dropdown-md {
+        margin-left: -120px;
+    }
+}
+
+.open .dropdown-menu {
+    -webkit-transform: scale(1);
+    transform: scale(1);
+    -webkit-transition-delay: .2s;
+    transition-delay: .2s;
+    -webkit-transition-duration: 0s, .2s, .2s;
+    transition-duration: 0s, .2s, .2s;
+    max-height: inherit;
+    opacity: 1;
+    margin-top: 10px !important;
+    overflow: initial;
+}
+
+.dropdown-menu {
+    .setting .setting-icon img,
+    >li.notification .notification-icon img {
+        max-width: 100%;
+        max-height: 100%;
+    }
+}
+
+.open.dropup .dropdown-menu {
+    margin-top: 0 !important;
+    margin-bottom: 10px !important;
+}
+
+.dropdown-menu {
+    >.active>a {
+        background: #007aff;
+        &:focus,
+        &:hover {
+            background: #007aff;
+        }
+    }
+    .divider {
+        margin: 8px 0;
+        height: 1px;
+        width: auto;
+        background: #e8e8e8;
+    }
+}
+
+.dropdown-header {
+    border-bottom: 1px solid #e8e8e8;
+    font-size: 12px;
+    color: #000;
+    padding: 10px 15px;
+    .dropdown-close {
+        float: right;
+        background: #8A8A8F;
+        color: #fff !important;
+        border-radius: 40px;
+        padding: 0 !important;
+        font-size: 16px;
+        line-height: 16px !important;
+        height: 18px;
+        width: 18px;
+        text-align: center;
+        font-weight: 400;
+        &:active,
+        &:focus,
+        &:hover {
+            background: #666;
+        }
+    }
+}
+
+.dropdown-menu {
+    >li {
+        &:first-child {
+            border-radius: 8px 8px 0 0;
+        }
+        &:last-child {
+            border-radius: 0 0 8px 8px;
+        }
+        &.notification {
+            a {
+                display: block;
+                padding: 10px 0 10px 15px !important;
+            }
+            .notification-info {
+                margin-left: 28px;
+            }
+            .notification-desc,
+            .notification-info,
+            .notification-title {
+                white-space: nowrap;
+                overflow: hidden;
+                text-overflow: ellipsis;
+            }
+            .notification-icon {
+                float: left;
+                width: 18px;
+                height: 18px;
+                border-radius: 6px;
+                line-height: 18px;
+                text-align: center;
+                overflow: hidden;
+                color: #fff;
+            }
+            a .notification-info {
+                padding-right: 15px;
+            }
+            .notification-icon i {
+                display: block;
+                line-height: 18px;
+                text-align: center;
+            }
+            +li.notification .notification-info {
+                border-top: 1px solid #e8e8e8;
+                margin-top: -10px;
+                padding-top: 10px;
+            }
+            .notification-title {
+                margin: 0 0 2px;
+                font-size: 12px;
+                font-weight: 500;
+            }
+            .notification-time {
+                font-size: 10px;
+                font-weight: 400;
+                color: #999;
+            }
+            .notification-desc {
+                font-size: 11px;
+                margin: 0;
+            }
+        }
+    }
+    .setting {
+        padding: 10px 0 10px 15px;
+        +.setting .setting-info {
+            border-top: 1px solid #e5e5e5;
+            margin-top: -10px;
+            padding-top: 10px;
+        }
+        .setting-icon {
+            float: left;
+            width: 24px;
+            height: 24px;
+            text-align: center;
+            line-height: 24px;
+            border-radius: 6px;
+            color: #fff;
+            i {
+                display: block;
+                line-height: 24px;
+                text-align: center;
+                font-size: 16px;
+            }
+        }
+        .setting-info {
+            margin-left: 34px;
+            line-height: 24px;
+            white-space: nowrap;
+            overflow: hidden;
+            text-overflow: ellipsis;
+            padding-right: 15px;
+        }
+    }
+}

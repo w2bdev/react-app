@@ -1,0 +1,20 @@
+.btn-scroll-top {
+    position: fixed;
+    bottom: 25px;
+    right: 25px;
+    width: 36px;
+    height: 36px;
+    border-radius: 18px;
+    z-index: 1000;
+    background: #666;
+    color: #fff;
+    text-align: center;
+    line-height: 36px;
+    text-decoration: none;
+    &:focus,
+    &:hover {
+        background: #007aff;
+        color: #fff;
+        text-decoration: none;
+    }
+}
