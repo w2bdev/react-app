@@ -17,7 +17,6 @@ export const Home = ({actions, currentTime}) => {
 }
 
 const mapStateToProps = (state) => {
-    console.log(state);
     return { currentTime : state.currentTime }
 }
 

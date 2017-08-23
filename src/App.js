@@ -8,6 +8,9 @@ import SideBar from './components/SideBar/SideBar';
 // Data
 import * as RouteData from './api/routes';
 
+// Views
+import Welcome from './views/Welcome/Welcome'
+
 
 class App extends React.Component {
 
@@ -63,7 +66,7 @@ class App extends React.Component {
 
           <div id="content" className="content">
             {/*Default Route  */}
-            <Route exact={true} path="/" component= {() => <h2>Dashboard</h2>}/> {/*Dynamically generated route  */}
+            <Route exact={true} path="/" component= {Welcome}/> {/*Dynamically generated route  */}
 
             { //generating route base on flattened route
               //currently support 2 layer navigation
