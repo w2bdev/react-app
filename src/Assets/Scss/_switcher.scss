@@ -1,0 +1,93 @@
+.switcher {
+    input:checked+label:before {
+        content: "";
+    }
+    label {
+        &:after,
+        &:before {
+            content: "";
+        }
+    }
+}
+
+.switcher {
+    display: inline-block;
+    label {
+        display: block;
+        margin: 0;
+        width: 42px;
+        height: 24px;
+        position: relative;
+    }
+}
+
+.switcher {
+    input {
+        display: none;
+    }
+    label {
+        &:before {
+            display: block;
+            width: 42px;
+            height: 24px;
+            background: #EFEFF4;
+            border: 2px solid #f1f1f1;
+            border-radius: 40px;
+            -webkit-transition: all .2s linear;
+            -moz-transition: all .2s linear;
+            -transition: all 0.2s linear;
+        }
+        &:after {
+            height: 20px;
+            width: 20px;
+            position: absolute;
+            left: 2px;
+            top: 2px;
+            border-radius: 40px;
+            background: #fff;
+            box-shadow: 0 2px 2px rgba(0, 0, 0, 0.5);
+            -webkit-transition: all .1s linear;
+            -moz-transition: all .1s linear;
+            -transition: all 0.1s linear;
+        }
+    }
+    input:checked+label:before {
+        background: #007AFF;
+        border: 2px solid #007AFF;
+    }
+    &.switcher-success input:checked+label:before {
+        background: #4cd964;
+        border: 2px solid #4cd964;
+    }
+    &.switcher-purple input:checked+label:before {
+        background: #5856D6;
+        border-color: #5856D6;
+    }
+    &.switcher-inverse input:checked+label:before {
+        background: #000;
+        border-color: #000;
+    }
+    &.switcher-warning input:checked+label:before {
+        background: #FF9500;
+        border-color: #FF9500;
+    }
+    &.switcher-danger input:checked+label:before {
+        background: #FF3B30;
+        border-color: #FF3B30;
+    }
+    &.switcher-info input:checked+label:before {
+        background: #5AC8FA;
+        border-color: #5AC8FA;
+    }
+    &.switcher-pink input:checked+label:before {
+        background: #FF2D55;
+        border-color: #FF2D55;
+    }
+    &.switcher-yellow input:checked+label:before {
+        background: #FC0;
+        border-color: #FC0;
+    }
+    input:checked+label:after {
+        left: 20px;
+    }
+}

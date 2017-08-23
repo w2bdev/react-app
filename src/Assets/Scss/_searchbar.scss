@@ -1,0 +1,135 @@
+.header-search-bar {
+    position: absolute;
+    left: 0;
+    top: -44px;
+    right: 0;
+    height: 44px;
+    overflow: hidden;
+    padding: 0 274px;
+    background: #333;
+    display: none;
+    &.active {
+        top: 0;
+        display: block;
+        animation: searchBarActive 0.2s;
+    }
+    &.inactive {
+        top: -44px;
+        display: block;
+        animation: searchBarInactive 0.2s;
+    }
+    .form-control {
+        box-shadow: none;
+        border: none;
+        height: 44px;
+        border-radius: 0;
+        font-weight: 300;
+        padding: 0;
+        line-height: 44px;
+        background: #333;
+        color: #fff;
+        font-size: 14px;
+        &:focus {
+            box-shadow: none;
+        }
+    }
+    .left-icon,
+    .right-icon {
+        width: 44px;
+        height: 44px;
+        font-size: 18px;
+        line-height: 44px;
+        text-align: center;
+        position: absolute;
+        top: 0;
+        left: 0;
+        display: block;
+        color: #ccc;
+        text-decoration: none;
+        a {
+            width: 44px;
+            height: 44px;
+            font-size: 18px;
+            line-height: 44px;
+            text-align: center;
+            position: absolute;
+            top: 0;
+            left: 0;
+            display: block;
+            color: #ccc;
+            text-decoration: none;
+        }
+    }
+    .left-icon {
+        left: 230px;
+    }
+    .right-icon {
+        left: auto;
+        right: 230px;
+    }
+    .left-icon i:before,
+    .right-icon i:before {
+        display: block;
+        line-height: 44px;
+    }
+}
+
+.search-bar-backdrop {
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    display: none;
+    background: rgba(0, 0, 0, 0.9);
+    z-index: 1000;
+}
+
+
+@-webkit-keyframes searchBarActive {
+    from {
+        top: -44px;
+    }
+    to {
+        top: 0;
+    }
+}
+
+@keyframes searchBarActive {
+    from {
+        top: -44px;
+    }
+    to {
+        top: 0;
+    }
+}
+
+@-webkit-keyframes searchBarInactive {
+    from {
+        top: 0;
+    }
+    to {
+        top: -44px;
+    }
+}
+
+@keyframes searchBarInactive {
+    from {
+        top: 0;
+    }
+    to {
+        top: -50px;
+    }
+}
+
+@media (max-width: 768px) {
+    .header-search-bar {
+        padding: 0 44px !important;
+        .left-icon {
+            left: 0 !important;
+        }
+        .right-icon {
+            right: 0 !important;
+        }
+    }
+}
