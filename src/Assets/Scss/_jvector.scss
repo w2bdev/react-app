@@ -1,0 +1,110 @@
+
+
+.jvectormap-goback,
+.jvectormap-zoomin,
+.jvectormap-zoomout {
+    left: 0;
+    background: #007aff;
+}
+
+.jvectormap-zoomin {
+    top: 0;
+}
+
+.jvectormap-zoomout {
+    top: 20px;
+}
+
+.jvectormap-tip {
+    background: #666;
+    border: none;
+    padding: 3px 6px;
+}
+
+.jvectormap-full {
+    .jvectormap-goback,
+    .jvectormap-zoomin,
+    .jvectormap-zoomout {
+        left: 15px;
+    }
+    .jvectormap-zoomin {
+        top: 15px;
+    }
+    .jvectormap-zoomout {
+        top: 35px;
+    }
+}
+
+body .jvectormap-zoomout {
+    top: 35px;
+}
+
+.content-cover {
+    .jvectormap-goback,
+    .jvectormap-zoomin,
+    .jvectormap-zoomout {
+        margin-top: 80px;
+        margin-left: 15px;
+    }
+}
+
+body {
+    .jvectormap-zoomin,
+    .jvectormap-zoomout {
+        width: 20px;
+        height: 20px;
+        line-height: 14px;
+        border-radius: 6px;
+        box-sizing: border-box;
+        font-size: 14px;
+    }
+    .jvectormap-tip {
+        border: none !important;
+        padding: 5px 7px !important;
+        font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
+        font-size: 12px;
+    }
+    .jvectormap-goback,
+    .jvectormap-zoomin,
+    .jvectormap-zoomout {
+        background: #007aff;
+    }
+    .jvectormap-legend-title {
+        font-size: 10px;
+        margin: -10px -10px 10px;
+        padding: 5px 10px;
+        background: #666;
+        border-radius: 6px 6px 0 0;
+    }
+}
+
+#chartjs-tooltip {
+    border-radius: 6px;
+}
+
+body {
+    .jvectormap-legend {
+        border-radius: 6px;
+    }
+    .jvectormap-legend-cnt-v {
+        .jvectormap-legend {
+            padding: 10px;
+        }
+        .jvectormap-legend-tick-sample {
+            height: 20px;
+        }
+        .jvectormap-legend-tick-text {
+            font-size: 11px;
+            padding-left: 10px;
+            position: relative;
+        }
+        bottom: 25px;
+        left: 25px;
+        top: auto;
+        right: auto;
+    }
+}
+
+.content-cover .jvectormap-legend-cnt-v {
+    margin-top: 55px;
+}

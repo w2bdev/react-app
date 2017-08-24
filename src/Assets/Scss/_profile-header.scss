@@ -1,0 +1,136 @@
+.profile-header {
+    position: relative;
+    overflow: hidden;
+    .profile-header-cover {
+        background: url(../img/profile-cover.jpg) center no-repeat;
+        background-size: 100% auto;
+        position: absolute;
+        left: 0;
+        right: 0;
+        top: 0;
+        bottom: 0;
+        &:before {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: 0;
+            right: 0;
+            bottom: 0;
+            background: linear-gradient(to bottom, rgba(0, 0, 0, 0.25) 0, rgba(0, 0, 0, 0.85) 100%);
+        }
+    }
+    .profile-header-content,
+    .profile-header-tab {
+        position: relative;
+    }
+}
+
+.profile-header-img,
+body .fc-icon {
+    position: relative;
+}
+
+.profile-header {
+    .profile-header-tab {
+        background: #fff;
+        list-style-type: none;
+        margin: -20px 0 0;
+        padding: 0 0 0 140px;
+        border-bottom: 1px solid #C8C7CC;
+        white-space: nowrap;
+        >li {
+            display: inline-block;
+            >a {
+                display: block;
+                color: #000;
+                line-height: 20px;
+                padding: 10px 20px;
+                text-decoration: none;
+                font-weight: 700;
+            }
+            &.active>a {
+                color: #007aff;
+            }
+        }
+    }
+    .profile-header-content {
+        &:after,
+        &:before {
+            content: '';
+            display: table;
+            clear: both;
+        }
+        color: #fff;
+        padding: 20px;
+    }
+}
+
+.profile-header-img img {
+    max-width: 100%;
+}
+
+.profile-header-img {
+    float: left;
+    width: 120px;
+    height: 120px;
+    overflow: hidden;
+    z-index: 10;
+    margin: 0 20px -20px 0;
+    padding: 3px;
+    border-radius: 4px;
+    background: #fff;
+}
+
+.profile-header-info h4 {
+    font-weight: 500;
+    margin-bottom: 5px;
+}
+
+.profile-container {
+    padding: 25px;
+}
+
+@media (max-width: 967px) {
+    .profile-header-img {
+        width: 90px;
+        height: 90px;
+        margin: 0;
+    }
+    .profile-header-info {
+        margin-left: 105px;
+        padding-bottom: 15px;
+    }
+    .profile-header .profile-header-tab {
+        padding-left: 0;
+    }
+}
+
+@media (max-width: 767px) {
+    .profile-header .profile-header-cover {
+        background-position: top;
+    }
+    .profile-header-img {
+        width: 60px;
+        height: 60px;
+        margin: 0;
+    }
+    .profile-header-info {
+        margin-left: 75px;
+        padding-bottom: 15px;
+        h4 {
+            margin: 0 0 5px;
+        }
+    }
+    .profile-header .profile-header-tab {
+        white-space: nowrap;
+        overflow: scroll;
+        padding: 0;
+    }
+    .profile-container {
+        padding: 15px 15px 59px;
+    }
+    .friend-list>li {
+        float: none;
+        width: auto;
+    }
+}

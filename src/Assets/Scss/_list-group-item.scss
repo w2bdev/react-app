@@ -1,0 +1,133 @@
+
+.list-group-item.active {
+    background: #007aff;
+    border-color: #007aff;
+    &:focus,
+    &:hover {
+        background: #007aff;
+        border-color: #007aff;
+    }
+}
+
+a.list-group-item,
+button.list-group-item {
+    color: #000;
+}
+
+a.list-group-item {
+    &:focus,
+    &:hover {
+        color: #000;
+        background: #EFEFF4;
+    }
+}
+
+button.list-group-item {
+    &:focus,
+    &:hover {
+        color: #000;
+        background: #EFEFF4;
+    }
+}
+
+.list-group-item.disabled {
+    background: #EFEFF4;
+    color: #8A8A8F;
+    &:focus,
+    &:hover {
+        background: #EFEFF4;
+        color: #8A8A8F;
+    }
+}
+
+.list-group-item-success,
+a.list-group-item-success,
+button.list-group-item-success {
+    color: #40b353;
+    background: #e5ffe9;
+}
+
+a.list-group-item-success {
+    &:focus,
+    &:hover {
+        color: #389c49;
+        background: #d8f3dc;
+    }
+}
+
+button.list-group-item-success {
+    &:focus,
+    &:hover {
+        color: #389c49;
+        background: #d8f3dc;
+    }
+}
+
+.list-group-item-info,
+a.list-group-item-info,
+button.list-group-item-info {
+    color: #45a8d6;
+    background: #e8f7ff;
+}
+
+a.list-group-item-info {
+    &:focus,
+    &:hover {
+        color: #409bc5;
+        background: #e1eef5;
+    }
+}
+
+button.list-group-item-info {
+    &:focus,
+    &:hover {
+        color: #409bc5;
+        background: #e1eef5;
+    }
+}
+
+.list-group-item-warning,
+a.list-group-item-warning,
+button.list-group-item-warning {
+    color: #e28502;
+    background: #fff5e6;
+}
+
+a.list-group-item-warning {
+    &:focus,
+    &:hover {
+        color: #d27c04;
+        background: #f5ebdd;
+    }
+}
+
+button.list-group-item-warning {
+    &:focus,
+    &:hover {
+        color: #d27c04;
+        background: #f5ebdd;
+    }
+}
+
+.list-group-item-danger,
+a.list-group-item-danger,
+button.list-group-item-danger {
+    color: #e2342a;
+    background: #ffe8e7;
+}
+
+a.list-group-item-danger {
+    &:focus,
+    &:hover {
+        color: #ce3128;
+        background: #f3e0df;
+    }
+}
+
+button.list-group-item-danger {
+    &:focus,
+    &:hover {
+        color: #ce3128;
+        background: #f3e0df;
+    }
+}

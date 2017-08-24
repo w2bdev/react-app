@@ -1,0 +1,99 @@
+.label-default {
+    background: #8A8A8F;
+    &[href] {
+        &:focus,
+        &:hover {
+            background: #737377;
+        }
+    }
+}
+
+.label-primary {
+    background: #007AFF;
+    &[href] {
+        &:focus,
+        &:hover {
+            background: #1D62F0;
+        }
+    }
+}
+
+.label-success {
+    background: #4CD964;
+    &[href] {
+        &:focus,
+        &:hover {
+            background: #45c35a;
+        }
+    }
+}
+
+.label-info {
+    background: #5AC8FA;
+    &[href] {
+        &:focus,
+        &:hover {
+            background: #50b3e0;
+        }
+    }
+}
+
+.label-warning {
+    background: #FF9500;
+    &[href] {
+        &:focus,
+        &:hover {
+            background: #e68701;
+        }
+    }
+}
+
+.label-danger {
+    background: #FF3B30;
+    &[href] {
+        &:focus,
+        &:hover {
+            background: #e4352b;
+        }
+    }
+}
+
+.label-purple {
+    background: #5856D6;
+    &[href] {
+        &:focus,
+        &:hover {
+            background: #4c4bb7;
+        }
+    }
+}
+
+.label-pink {
+    background: #FF2D55;
+    &[href] {
+        &:focus,
+        &:hover {
+            background: #de2649;
+        }
+    }
+}
+
+.label-yellow {
+    background: #FC0;
+    &[href] {
+        &:focus,
+        &:hover {
+            background: #e6b801;
+        }
+    }
+}
+
+.label-inverse {
+    background: #000;
+    &[href] {
+        &:focus,
+        &:hover {
+            background: #333;
+        }
+    }
+}

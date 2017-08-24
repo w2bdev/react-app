@@ -18,3 +18,11 @@
         text-decoration: none;
     }
 }
+
+@media (max-width: 767px) {
+    .btn-scroll-top {
+        bottom: 59px;
+        right: 15px;
+        z-index: 9999;
+    }
+}

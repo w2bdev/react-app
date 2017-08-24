@@ -1,0 +1,111 @@
+
+body {
+    .fc th a,
+    .fc-ltr .fc-basic-view .fc-day-top .fc-day-number,
+    .fc-widget-header a {
+        color: #000;
+    }
+}
+
+body {
+    .fc-toolbar h2 {
+        font-size: 16px;
+        font-weight: 500;
+        margin-top: 5px;
+        margin-bottom: -5px;
+    }
+    .fc-icon,
+    .fc-icon-left-single-arrow:after,
+    .fc-icon-right-single-arrow:after {
+        font-size: 12px;
+    }
+    .fc-state-default {
+        background: #fff;
+        border-color: #C8C7CC;
+        box-shadow: none;
+    }
+    .fc-icon {
+        top: 1px;
+        display: inline-block;
+        font-family: "Glyphicons Halflings" !important;
+        font-style: normal;
+        font-weight: 400;
+        line-height: 1;
+        -webkit-font-smoothing: antialiased;
+        -moz-osx-font-smoothing: grayscale;
+    }
+}
+
+body {
+    .fc-icon-left-single-arrow:after {
+        content: "";
+    }
+    .fc-icon-right-single-arrow:after {
+        content: "";
+    }
+}
+
+.fc-state-down,
+body .fc-state-active {
+    box-shadow: none;
+    background: #f3f3f3;
+}
+
+body {
+    .fc-unthemed {
+        .fc-content,
+        .fc-divider,
+        .fc-list-heading td,
+        .fc-list-view,
+        .fc-popover,
+        .fc-row,
+        tbody,
+        td,
+        th,
+        thead {
+            border-color: #e0e0e0;
+        }
+    }
+    .fc button {
+        font-size: 10px;
+        font-weight: 700;
+        text-transform: uppercase;
+        height: auto;
+        padding: 5px 8px;
+        line-height: 14px;
+    }
+    .fc-state-disabled {
+        opacity: 0.25;
+    }
+    .fc-body,
+    .fc-head,
+    .fc-list-table {
+        background: #fff;
+    }
+    .fc-unthemed {
+        .fc-divider,
+        .fc-list-heading td,
+        .fc-popover .fc-header {
+            background: #F9F9F9;
+        }
+    }
+    .fc-event,
+    .fc-event-dot {
+        background: #8A8A8F;
+        border: none;
+    }
+    .fc-event.fc-external-event {
+        display: inline-block;
+        padding: 5px 8px;
+        cursor: pointer;
+        margin: 0 0 3px;
+        &:hover {
+            opacity: 0.75;
+        }
+        &:active {
+            opacity: 0.5;
+        }
+    }
+}
+
+

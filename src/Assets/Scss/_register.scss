@@ -1,0 +1,150 @@
+.register {
+    position: absolute;
+    color: #fff;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+}
+
+.register-cover {
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    &:before {
+        top: 0;
+        left: 0;
+        right: 0;
+        bottom: 0;
+    }
+}
+
+.register-cover:before {
+    content: "";
+}
+
+.register .form-control:focus {
+    box-shadow: 0 0 0 2px rgba(102, 175, 233, 1);
+}
+
+.register-brand i {
+    line-height: 28px;
+    margin-right: 10px;
+    float: left;
+}
+
+.register-cover {
+    background: url(../img/register-cover.jpg) center center no-repeat fixed;
+    background-size: 100%;
+    position: fixed;
+    &:before {
+        display: block;
+        position: absolute;
+        background: linear-gradient(to bottom, rgba(0, 0, 0, 0.3) 0, rgba(0, 0, 0, 0.85) 100%);
+    }
+}
+
+.register-content {
+    width: 720px;
+    position: absolute;
+    left: 50%;
+    margin-left: -360px;
+    top: 50px;
+    padding: 20px;
+}
+
+
+.inverse-mode .register-brand a {
+    display: block;
+    color: #fff;
+    text-decoration: none;
+    &:focus,
+    &:hover {
+        display: block;
+        color: #fff;
+        text-decoration: none;
+    }
+}
+
+.register-brand {
+    a {
+        display: block;
+        color: #fff;
+        text-decoration: none;
+        &:focus,
+        &:hover {
+            display: block;
+            color: #fff;
+            text-decoration: none;
+        }
+    }
+    font-size: 16px;
+    line-height: 28px;
+    margin-bottom: 30px;
+    i {
+        width: 28px;
+        font-size: 28px;
+    }
+}
+
+.inverse-mode .register .form-control {
+    background: rgba(255, 255, 255, 0.3);
+    border-color: transparent;
+    color: #fff;
+}
+
+.register {
+    .form-control {
+        background: rgba(255, 255, 255, 0.3);
+        border-color: transparent;
+        color: #fff;
+    }
+    .control-label {
+        color: #fff;
+    }
+}
+
+.register-desc {
+    color: rgba(255, 255, 255, 0.5);
+    margin-bottom: 5px;
+}
+
+.register {
+    h3 span {
+        border-bottom: 2px solid rgba(255, 255, 255, 0.25);
+        padding-bottom: 5px;
+    }
+    .form-control {
+        &::-webkit-input-placeholder,
+        &::-moz-placeholder,
+        &:-ms-input-placeholder,
+        &:-moz-placeholder {
+            color: rgba(255, 255, 255, 0.75);
+        }
+    }
+}
+
+@media (max-width: 1024px) {
+    .register-cover {
+        background-size: auto 100%;
+    }
+}
+
+@media (max-width: 767px) {
+    .register-content {
+        width: 480px;
+        margin-left: -240px;
+    }
+}
+
+@media (max-width: 480px) {
+    .register-content {
+        width: auto;
+        left: 0;
+        margin-left: 0;
+        right: 0;
+        top: 0;
+        padding: 20px;
+    }
+}

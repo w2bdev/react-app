@@ -1,0 +1,133 @@
+
+.nav-tabs {
+    border-bottom: 1px solid #dadade;
+}
+
+.tab-content {
+    &.tab-content-bordered {
+        padding: 15px;
+        border: 1px solid #dadade;
+        border-top: none;
+    }
+    padding: 15px;
+}
+
+.nav-tabs>li {
+    >a:hover {
+        border-color: #EFEFF4 #EFEFF4 #dadade;
+    }
+    &.active>a {
+        border: 1px solid #dadade;
+        border-bottom-color: transparent;
+        &:focus,
+        &:hover {
+            border: 1px solid #dadade;
+            border-bottom-color: transparent;
+        }
+    }
+}
+
+.nav-tabs-left {
+    display: table;
+    width: 100%;
+    .nav.nav-tabs {
+        display: table-cell;
+        border-bottom: none;
+        border-right: 1px solid #dadade;
+    }
+    .tab-content {
+        display: table-cell;
+        border: 1px solid #dadade;
+        border-left: none;
+    }
+    .nav-tabs>li {
+        float: none;
+        margin: 0 -1px 0 0;
+        >a {
+            margin-right: 0;
+            margin-bottom: 2px;
+            border-radius: 4px 0 0 4px;
+            white-space: nowrap;
+        }
+        &.active>a {
+            border: 1px solid #dadade;
+            border-right-color: transparent;
+            &:focus,
+            &:hover {
+                border: 1px solid #dadade;
+                border-right-color: transparent;
+            }
+        }
+        >a:hover {
+            border-color: #EFEFF4 #dadade #EFEFF4 #EFEFF4;
+        }
+    }
+}
+
+.nav-tabs-right {
+    display: table;
+    width: 100%;
+    .nav.nav-tabs {
+        display: table-cell;
+        border-bottom: none;
+        border-left: 1px solid #dadade;
+    }
+    .tab-content {
+        display: table-cell;
+        border: 1px solid #dadade;
+        border-right: none;
+    }
+    .nav-tabs>li {
+        float: none;
+        margin: 0 0 0 -1px;
+        >a {
+            margin-right: 0;
+            margin-bottom: 2px;
+            border-radius: 0 4px 4px 0;
+            white-space: nowrap;
+        }
+        &.active>a {
+            border: 1px solid #dadade;
+            border-left-color: transparent;
+            &:focus,
+            &:hover {
+                border: 1px solid #dadade;
+                border-left-color: transparent;
+            }
+        }
+        >a:hover {
+            border-color: #EFEFF4 #EFEFF4 #EFEFF4 #dadade;
+        }
+    }
+}
+
+.nav-tabs-bottom {
+    .nav-tabs {
+        border-top: 1px solid #dadade;
+        border-bottom: none;
+    }
+    .tab-content.tab-content-bordered {
+        padding: 15px;
+        border: 1px solid #dadade;
+        border-bottom: none;
+    }
+    .nav-tabs>li {
+        >a {
+            border-radius: 0 0 4px 4px;
+            margin-bottom: 0;
+            margin-top: -1px;
+            &:hover {
+                border-color: #dadade #EFEFF4 #EFEFF4;
+            }
+        }
+        &.active>a {
+            border: 1px solid #dadade;
+            border-top-color: transparent;
+            &:focus,
+            &:hover {
+                border: 1px solid #dadade;
+                border-top-color: transparent;
+            }
+        }
+    }
+}

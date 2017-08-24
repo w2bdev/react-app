@@ -1,0 +1,56 @@
+
+.table.table-profile {
+    th {
+        border: none;
+        color: #000;
+        padding-bottom: 5px;
+        padding-top: 0;
+    }
+    td {
+        border-color: #C8C7CC;
+    }
+    tbody+thead>tr>th {
+        padding-top: 25px;
+    }
+    .field {
+        color: #666;
+        font-weight: 600;
+        width: 25%;
+        text-align: right;
+    }
+    .value {
+        font-weight: 500;
+    }
+}
+
+
+.profile-info-list {
+    padding: 0;
+    margin: 0;
+    list-style-type: none;
+}
+.profile-info-list>li {
+    &.title {
+        font-size: 10px;
+        font-weight: 700;
+        color: #8A8A8F;
+        padding: 0 0 5px;
+    }
+    +li.title {
+        padding-top: 25px;
+    }
+    padding: 10px 0;
+    .field {
+        font-weight: 700;
+    }
+    .value {
+        color: #666;
+    }
+    &.img-list a {
+        display: inline-block;
+        img {
+            max-width: 36px;
+            border-radius: 40px;
+        }
+    }
+}

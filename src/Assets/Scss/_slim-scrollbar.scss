@@ -1,0 +1,43 @@
+
+.slimScrollBar {
+    background: 0 0 !important;
+    width: 8px !important;
+    -webkit-transition: opacity .2s linear;
+    -moz-transition: opacity .2s linear;
+    transition: opacity .2s linear;
+    opacity: 0 !important;
+    right: 0 !important;
+}
+
+.slimScrollDiv {
+    &:active .slimScrollBar,
+    &:focus .slimScrollBar,
+    &:hover .slimScrollBar {
+        display: block !important;
+        opacity: 0.5 !important;
+    }
+    .slimScrollBar {
+        &:active,
+        &:focus,
+        &:hover {
+            opacity: 0.75 !important;
+            width: 10px !important;
+        }
+    }
+}
+
+.slimScrollBar:before {
+    content: '';
+    position: absolute;
+    top: 2px;
+    left: 0;
+    right: 2px;
+    bottom: 2px;
+    border-radius: 40px;
+    background: #000;
+    opacity: 0.5;
+}
+
+.inverse-mode .slimScrollBar:before {
+    background: #fff;
+}

@@ -1,0 +1,63 @@
+@import 'config';
+
+.progress-bar {
+    background: $default-color;
+    box-shadow: none;
+}
+
+.progress-bar-success {
+    background: $success-color;
+}
+
+.progress-bar-info {
+    background: $info-color;
+}
+
+.progress-bar-warning {
+    background: $warning-color;
+}
+
+.progress-bar-danger {
+    background: $danger-color;
+}
+
+.progress-bar-purple {
+    background: $purple-color;
+}
+
+.progress-bar-yellow {
+    background: $yellow-color;
+}
+
+.progress-bar-pink {
+    background: $pink-color;
+}
+
+.progress-bar-inverse {
+    background: $inverse-color;
+}
+
+.progress.progress-sm {
+    height: 12px;
+    .progress-bar {
+        line-height: 12px;
+        font-size: 9px;
+    }
+}
+
+.progress {
+    box-shadow: none;
+}
+
+.progress-bar.progress-bar-primary {
+    background: #007aff;
+}
+
+.progress.progress-xs {
+    height: 2px;
+}
+
+.progress,
+.progress-bar {
+    border-radius: 40px;
+}

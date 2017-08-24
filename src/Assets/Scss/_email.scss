@@ -1,0 +1,411 @@
+
+.mail-box-sidebar {
+    position: absolute;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    width: 200px;
+    border-right: 1px solid #d1d1d4;
+}
+
+.mail-box-content {
+    position: absolute;
+    top: 0;
+    left: 200px;
+    right: 0;
+    bottom: 0;
+    background: #fff;
+}
+
+.mail-box-container {
+    position: absolute;
+    top: 51px;
+    left: 0;
+    right: 0;
+    bottom: 0;
+}
+
+.mail-box-header {
+    border-bottom: 1px solid #d1d1d4;
+}
+
+.mail-box-sidebar .title {
+    margin: 0 0 5px;
+    font-size: 10px;
+    font-weight: 700;
+    color: #8A8A8F;
+    padding: 15px 15px 0;
+}
+
+.mail-box-menu {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    >li {
+        >a {
+            display: block;
+            color: #666;
+            font-weight: 500;
+            padding: 3px 25px;
+            text-decoration: none;
+            line-height: 20px;
+            i {
+                float: left;
+                font-size: 16px;
+                margin-right: 10px;
+                line-height: 20px;
+                width: 20px;
+                text-align: center;
+                top: 0;
+            }
+            b {
+                float: right;
+                background: #007aff;
+                color: #fff;
+                padding: 0 6px 1px;
+                border-radius: 6px;
+                font-size: 10px;
+                line-height: 16px;
+                margin-top: 1px;
+            }
+            .email-label {
+                float: left;
+                width: 12px;
+                height: 12px;
+                margin-left: 4px;
+                margin-top: 4px;
+                margin-right: 14px;
+                border-radius: 6px;
+            }
+            &:focus,
+            &:hover {
+                color: #000;
+            }
+        }
+        &.active>a {
+            color: #007aff;
+            &:focus,
+            &:hover {
+                color: #007aff;
+            }
+        }
+    }
+}
+
+.mail-box-header {
+    >a {
+        display: block;
+        color: #222;
+        padding: 15px;
+        text-decoration: none;
+        line-height: 20px;
+        &:focus,
+        &:hover {
+            color: #007aff;
+        }
+        i {
+            float: left;
+            width: 20px;
+            height: 20px;
+            margin-right: 5px;
+            text-align: center;
+            line-height: 20px;
+            top: 0;
+            font-size: 16px;
+        }
+        .text {
+            display: block;
+            white-space: nowrap;
+            overflow: hidden;
+            text-overflow: ellipsis;
+            margin-right: 10px;
+        }
+    }
+    .dropdown-menu {
+        margin-top: -5px !important;
+        &:after,
+        &:before {
+            left: 17px;
+            border-width: 7px;
+            top: -14px;
+        }
+    }
+}
+
+.email-list>li:last-child,
+.mail-box-toolbar {
+    border-bottom: 1px solid #d1d1d4;
+}
+
+.email-detail-content,
+.email-list>li+li {
+    border-top: 1px solid #d1d1d4;
+}
+
+.mail-box-header .dropdown-menu:before {
+    top: -15px;
+}
+
+.mail-box-toolbar {
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    height: 51px;
+    padding: 10px 20px;
+    &:after,
+    &:before {
+        content: '';
+        display: table;
+        clear: both;
+    }
+}
+
+@media (max-width: 767px) {
+    .mail-box {
+        padding-bottom: 44px;
+    }
+    .mail-box-sidebar {
+        display: none;
+    }
+    .mail-box-container,
+    .mail-box-content {
+        position: relative;
+        left: 0;
+        top: 0;
+        height: auto;
+    }
+    .mail-box-toolbar {
+        position: relative;
+        left: 0;
+        top: 0;
+        height: auto;
+        padding: 10px 15px;
+    }
+}
+
+.email-list {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    background: #fff;
+    .email-checkbox,
+    .email-message {
+        padding: 10px 20px;
+    }
+    .email-checkbox {
+        float: left;
+    }
+    .email-message {
+        margin-left: 58px;
+    }
+    .email-checkbox label {
+        padding-left: 18px;
+    }
+    >li {
+        &:after,
+        &:before {
+            display: table;
+            clear: both;
+        }
+        &:hover {
+            background: #f9f9f9;
+        }
+    }
+    .email-message>a {
+        display: block;
+        color: #000;
+        margin: -10px -20px;
+        padding: 10px 20px;
+        text-decoration: none;
+        position: relative;
+    }
+}
+
+.email-message .email-sender {
+    font-size: 14px;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    position: relative;
+}
+
+.email-list .unread .email-sender {
+    font-weight: 600;
+}
+
+.email-message {
+    .email-time {
+        float: right;
+        font-size: 12px;
+        font-weight: 400;
+        color: #666;
+        margin-left: 10px;
+    }
+    .email-desc {
+        color: #8A8A8F;
+        white-space: nowrap;
+        overflow: hidden;
+        text-overflow: ellipsis;
+        position: relative;
+    }
+}
+
+.email-list {
+    .unread a:before {
+        position: absolute;
+        top: 16px;
+        left: 1px;
+        width: 8px;
+        height: 8px;
+        background: #007aff;
+        border-radius: 6px;
+    }
+    .has-attachment a:after {
+        content: '\e647';
+        position: absolute;
+        top: 16px;
+        left: -2px;
+        width: 10px;
+        height: 10px;
+        font-size: 14px;
+        color: #8A8A8F;
+        font-family: themify;
+        speak: none;
+        font-style: normal;
+        font-weight: 400;
+        font-variant: normal;
+        text-transform: none;
+        line-height: 10px;
+        -webkit-font-smoothing: antialiased;
+        -moz-osx-font-smoothing: grayscale;
+    }
+    .unread.has-attachment a:after {
+        top: 34px;
+    }
+}
+
+@media (max-width: 767px) {
+    .email-list {
+        .email-checkbox {
+            padding: 10px 15px;
+        }
+        .email-message {
+            padding: 10px 15px;
+            margin-left: 50px;
+        }
+    }
+}
+
+.email-form {
+    background: #f5f5f5;
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+}
+
+.email-form-header {
+    padding: 15px;
+}
+
+.email-detail-header {
+    padding: 15px 20px;
+    background: #f5f5f5;
+    .email-subject {
+        margin: 0 0 10px;
+    }
+}
+
+.email-sender-img {
+    float: left;
+    width: 36px;
+    height: 36px;
+    border-radius: 18px;
+    overflow: hidden;
+    margin-right: 10px;
+    margin-top: 3px;
+    img {
+        display: block;
+    }
+}
+
+.email-sender-info {
+    margin-left: 46px;
+    .title {
+        margin: 0 0 2px;
+        font-weight: 500;
+        font-size: 14px;
+    }
+    .time {
+        color: #8A8A8F;
+        font-size: 10px;
+        font-weight: 500;
+    }
+}
+
+.email-detail-content {
+    padding: 20px;
+}
+
+.email-detail-attachment {
+    &:after,
+    &:before {
+        content: '';
+        display: table;
+        clear: both;
+    }
+    .email-attachment {
+        background: #EFEFF4;
+        float: left;
+        width: 120px;
+        height: 75px;
+        overflow: hidden;
+        margin-right: 10px;
+        margin-bottom: 10px;
+        a {
+            display: block;
+            text-decoration: none;
+        }
+        .document-file {
+            height: 55px;
+            overflow: hidden;
+            text-align: center;
+            background: #C8C7CC;
+            i {
+                display: block;
+                line-height: 55px;
+                font-size: 28px;
+                color: #8A8A8F;
+            }
+        }
+        .document-name {
+            height: 20px;
+            line-height: 20px;
+            color: #666;
+            padding: 0 10px;
+            text-align: center;
+            text-overflow: ellipsis;
+            white-space: nowrap;
+        }
+    }
+}
+
+.email-list {
+    .unread a:before {
+        content: "";
+    }
+    >li {
+        &:after,
+        &:before {
+            content: "";
+        }
+    }
+}
+
+@media (max-width: 767px) {
+    .email-form {
+        position: relative;
+    }
+}

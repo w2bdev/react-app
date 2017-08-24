@@ -1,0 +1,54 @@
+
+.ui-menu .ui-menu-item a {
+    padding: 5px 10px;
+    border-radius: 4px;
+    margin: 0 30px;
+}
+
+.ui-state-focus,
+.ui-state-hover {
+    border: none;
+    background: #EFEFF4;
+    color: #000;
+}
+
+.ui-widget-content {
+    .ui-state-focus,
+    .ui-state-hover {
+        border: none;
+        background: #EFEFF4;
+        color: #000;
+    }
+}
+
+.ui-widget-header {
+    .ui-state-focus,
+    .ui-state-hover {
+        border: none;
+        background: #EFEFF4;
+        color: #000;
+    }
+}
+
+.ui-menu .ui-menu-item a {
+    &.ui-state-active,
+    &.ui-state-focus {
+        margin: 0 30px;
+    }
+}
+
+
+.ui-autocomplete-header {
+    font-size: 10px;
+    color: #999;
+    padding: 5px 15px;
+    margin-top: -5px;
+}
+
+.ui-autocomplete {
+    border: none;
+    border-radius: 0;
+    box-shadow: 0 2px 6px rgba(0, 0, 0, 0.3);
+    font-size: 12px;
+    padding: 15px 0;
+}
