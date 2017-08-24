@@ -1,0 +1,32 @@
+
+.caret,
+.dropup .caret{
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+}
+
+.caret,
+.dropup .caret {
+    font-family: themify;
+    speak: none;
+    font-style: normal;
+    font-weight: 400;
+    font-variant: normal;
+    text-transform: none;
+    line-height: 1;
+    border: none;
+    font-size: 10px;
+    min-width: 10px;
+}
+
+.caret:before {
+    content: "\e64b";
+    position: relative;
+    top: -3px;
+}
+
+.dropup .caret:before {
+    content: "\e648";
+    position: relative;
+    top: -3px;
+}

@@ -1,0 +1,38 @@
+
+.footer {
+    position: absolute;
+    left: 230px;
+    right: 0;
+    bottom: 0;
+    line-height: 15px;
+    padding: 15px 25px;
+    background: #eaeaea;
+    border-top: 1px solid #C8C7CC;
+}
+
+.page-full-width .footer {
+    left: 0;
+}
+
+.page-sidebar-minified .footer {
+    left: 60px;
+}
+
+.page-with-fixed-footer,
+.page-with-footer {
+    padding-bottom: 46px;
+}
+
+.page-with-fixed-footer .footer {
+    position: fixed;
+}
+
+@media (max-width: 767px) {
+    .page-with-fixed-footer,
+    .page-with-footer {
+        padding-bottom: 0;
+    }
+    .footer {
+        display: none;
+    }
+}

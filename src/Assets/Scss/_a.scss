@@ -1,0 +1,29 @@
+a {
+    color: #007aff;
+    -webkit-transition: color 0.2s cubic-bezier(0.3, 0.5, 0.6, 1);
+    -moz-transition: color 0.2s cubic-bezier(0.3, 0.5, 0.6, 1);
+    transition: color 0.2s cubic-bezier(0.3, 0.5, 0.6, 1);
+    &:focus,
+    &:hover {
+        color: #1D62F0;
+        outline: 0;
+    }
+}
+
+a.thumbnail {
+    &.active,
+    &:focus,
+    &:hover {
+        border-color: #007aff;
+    }
+}
+.inverse-mode {
+    color: #fff;
+    a {
+        color: #66afe9;
+        &:focus,
+        &:hover {
+            color: #7bc5ff;
+        }
+    }
+}

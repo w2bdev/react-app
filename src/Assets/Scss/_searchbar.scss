@@ -85,6 +85,9 @@
     z-index: 1000;
 }
 
+.search-bar-autocomplete.ui-autocomplete {
+    z-index: 1020;
+}
 
 @-webkit-keyframes searchBarActive {
     from {
