@@ -3,9 +3,14 @@ import Menu from './Menu'
 
 class SideBar extends Component {
     render() {
-        const {routes} = this.props
+        const {routes , isInversed} = this.props
+
+        let sidebarClassName = ['sidebar']
+        if(isInversed)
+            sidebarClassName.push("sidebar-inverse")
+
         return (
-            <div id="sidebar" className="sidebar sidebar-inverse">
+            <div id="sidebar" className={sidebarClassName.join(" ")}>
                 <div data-scrollbar="true" data-height="100%">
                     <ul className="nav">
                         {

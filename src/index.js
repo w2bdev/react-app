@@ -5,6 +5,7 @@ import Root from './Root';
 // import registerServiceWorker from './registerServiceWorker';
 
 import configureStore from './redux/configureStore';
+
 const {store, actions} = configureStore();
 
 ReactDOM.render(

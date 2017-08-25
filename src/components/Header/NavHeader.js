@@ -4,7 +4,7 @@ import {Link} from 'react-router-dom';
 class NavHeader extends Component {
     render() {
         const { companyName , isNavToggleOn, handleSideBarToggle} = this.props
-
+       
         let navbarToggleClass = ["navbar-toggle"]
 
         if(isNavToggleOn)

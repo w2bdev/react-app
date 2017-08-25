@@ -3,26 +3,48 @@ import _ from 'lodash'
 
 // Views
 import Home from '../views/Home/Home'
+import Role from '../views/AccessControl/Role/Role'
 
 export const routes = [
     {
         name: "Navigation" // name attribute only is title
-    }, {
+    }, 
+    {
         name: 'Home',
         icon: 'ti-home',
         path: '/home',
         exact: true,
         component: Home
-    }, {
+    },
+    {
         name: 'About',
         icon: 'ti-home',
         path: '/About',
         routes: [],
         exact: true,
         component: () => <h2>About</h2>
-    }, {
+    },
+    {
+        name : "Access Control"
+    },
+    {
+        name: 'Role',
+        icon: 'ti-user',
+        path: '/Role',
+        exact: true,
+        component: Role
+    }, 
+    {
+        name: 'Admin',
+        icon: 'ti-user',
+        path: '/Admin',
+        exact: true,
+        component: () => <h2>Admin</h2>
+    },
+    {
         name: "Notification"
-    }, {
+    }, 
+    {
         name: 'Email',
         icon: 'ti-email',
         path: '/email',

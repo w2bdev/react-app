@@ -1,6 +1,4 @@
 import React, {Component} from 'react';
-
-// import {Link} from 'react-router-dom';
 import NavHeader from './NavHeader';
 import NavBar from './NavBar';
 import SearchBox from './SearchBox';
@@ -27,12 +25,21 @@ class Header extends Component {
 
   render() {
 
-    const {isNavToggleOn, handleSideBarToggle} = this.props
+    const {isNavToggleOn, isHeaderInversed , isHeaderFixed , handleSideBarToggle} = this.props
 
+    let headerClassName = ["header","navbar"];
+    
+    if(isHeaderInversed)
+      headerClassName.push("navbar-inverse");
+    else
+      headerClassName.push("navbar-default")
+
+    if(isHeaderInversed)
+      headerClassName.push("navbar-fixed-top");
+    
     return (
-      <header className="header navbar navbar-inverse navbar-fixed-top">
+      <header className={headerClassName.join(" ")}>
         <div className="container-fluid">
-
           <NavHeader
             companyName="BinSoft Solution"
             isNavToggleOn={isNavToggleOn}
@@ -43,7 +50,6 @@ class Header extends Component {
           <SearchBox isActive={this.state.isOpenSearch} handleSearch={this.handleSearch}/>
         
         </div>
-
       </header>
     );
   }

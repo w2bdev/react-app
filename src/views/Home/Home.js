@@ -9,9 +9,6 @@ export const Home = ({actions, currentTime}) => {
             <button className="btn btn-primary" onClick={actions.currentTime.updateTime}>
             Update
             </button>
-            <button className="btn btn-primary" onClick={actions.currentTime.sayHello}>
-            SayHello
-            </button>
         </div>
     )
 }
