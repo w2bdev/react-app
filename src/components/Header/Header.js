@@ -25,7 +25,7 @@ class Header extends Component {
 
   render() {
 
-    const {isNavToggleOn, isHeaderInversed , isHeaderFixed , handleSideBarToggle} = this.props
+    const {isNavToggleOn, isHeaderInversed , handleSideBarToggle} = this.props
 
     let headerClassName = ["header","navbar"];
     

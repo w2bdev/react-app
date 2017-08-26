@@ -21,6 +21,16 @@ export const reducer = (state = initialState, action) => {
                 ...state,
                 isNavToggleOn: !state.isNavToggleOn
             }
+        case types.UPDATE_NAV_MINIFIED:
+            return {
+                ...state,
+                isNavMinified: !state.isNavMinified
+            }
+        case types.UPDATE_SIDEBAR_INVERSED:
+            return {
+                ...state,
+                isNavToggleOn: !state.isNavToggleOn
+            }
         case types.UPDATE_HEADER_FIXED:
             return {
                 ...state,
@@ -30,16 +40,6 @@ export const reducer = (state = initialState, action) => {
             return {
                 ...state,
                 isHeaderInversed: !state.isHeaderInversed
-            }
-        case types.UPDATE_NAV_MINIFIED:
-            return {
-                ...state,
-                isNavMinified: !state.isNavMinified
-            }
-        case types.UPDATE_NAV_TOGGLE:
-            return {
-                ...state,
-                isNavToggleOn: !state.isNavToggleOn
             }
         default:
             return state;

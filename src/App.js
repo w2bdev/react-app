@@ -1,5 +1,5 @@
 import React from 'react'
-import {BrowserRouter as Router, Route} from 'react-router-dom'
+import {BrowserRouter as Router} from 'react-router-dom'
 import {connect} from 'react-redux';
 
 // Components
@@ -22,11 +22,15 @@ class App extends React.Component {
 
   render() {
 
-    let pageContainerClassName = ["page-header-fixed", "page-sidebar-fixed"]
+    let pageContainerClassName = ["page-sidebar-fixed"]
 
-    if (this.props.currentSetting.isNavToggleOn) 
+    const {actions , currentSetting } = this.props
+
+    if (currentSetting.isHeaderFixed) 
+      pageContainerClassName.push("page-header-fixed");
+    if (currentSetting.isNavToggleOn) 
       pageContainerClassName.push("page-sidebar-toggled");
-    if (this.props.currentSetting.isNavMinified)
+    if (currentSetting.isNavMinified)
       pageContainerClassName.push("page-sidebar-minified");
     
     return (
@@ -34,20 +38,20 @@ class App extends React.Component {
         <div id="page-container" className={pageContainerClassName.join(" ")}>
 
           <Header
-            handleSideBarToggle={this.props.actions.currentSetting.toggleNav}
-            isNavToggleOn={this.props.currentSetting.isNavToggleOn} 
-            isHeaderInversed={this.props.currentSetting.isHeaderInversed}
-            isHeaderFixed={this.props.currentSetting.isHeaderFixed}
+            handleSideBarToggle={actions.currentSetting.toggleNav}
+            isNavToggleOn={currentSetting.isNavToggleOn} 
+            isHeaderInversed={currentSetting.isHeaderInversed}
+            isHeaderFixed={currentSetting.isHeaderFixed}
             />
             
           <SideBar 
             routes={RouteData.routes} 
-            isInversed={this.props.currentSetting.isSidebarInversed}
+            isInversed={currentSetting.isSidebarInversed}
             />
           
           <Content 
             routes={RouteData.flattenRoutes} 
-            actions={this.props.actions} 
+            actions={actions} 
             />
           
         </div>

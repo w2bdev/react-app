@@ -4,6 +4,9 @@ import {createStore, bindActionCreators, combineReducers, applyMiddleware} from 
 import * as currentTime from './modules/currentTime';
 import * as currentSetting from './modules/currentSetting';
 
+// Middleware
+import * as loggingMiddleware from './middlewares/loggingMiddleware';
+
 export const configureStore = () => {
 
 
@@ -11,20 +14,12 @@ export const configureStore = () => {
             currentTime: currentTime.reducer,
             currentSetting: currentSetting.reducer
         })
-
-
-    const loggingMiddleware = (store) => (next) => (action) => {
-        
-        console.log(`Redux Log:`, action)
-       
-        next(action);
-    }
-
     
     const store = createStore(
                     reducer, 
+                    window.__REDUX_DEVTOOLS_EXTENSION__ && window.__REDUX_DEVTOOLS_EXTENSION__(),
                     applyMiddleware(
-                        loggingMiddleware
+                        loggingMiddleware.logging
                     )
                 );
 
