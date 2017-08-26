@@ -1,6 +1,7 @@
 import React, {Component} from 'react';
 import $ from 'jquery'
 import 'jquery-ui/ui/widgets/datepicker';
+import {ButtonToolbar ,Button} from 'react-bootstrap';
 
 class Datepicker extends Component {
     constructor(props) {
@@ -32,9 +33,14 @@ class Datepicker extends Component {
   
     render(){
         return (
-        <input type='text' 
-                ref={el => this.el = el}
-                onChange={this.handleChange} />
+            <div>
+                <input type='text' 
+                        ref={el => this.el = el}
+                        onChange={this.handleChange} />
+                <ButtonToolbar>
+                    <Button bsStyle="success">Success</Button>
+                </ ButtonToolbar>
+            </div>
         )
     }
 }
